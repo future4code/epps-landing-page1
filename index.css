@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+/* HOME */
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgb(146, 94, 94);
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+main {
+    display: flex;
+    height: 70vh;
+    background-color: rgb(92, 38, 38);
+}
+
+footer {
+    display: flex;
+    height: 15vh;
+    background-color: rgb(49, 40, 40);
+}
