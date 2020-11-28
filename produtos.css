@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* HOME */
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    background-color: #ff914d;
+
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-logo {
+    height: 20vh;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+}
+
+.container-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-links ul {
+    display: flex;
+}
+
+.container-links a {
+    font-size: 2em;
+    color: white;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+/* CONTEÚDO HOME */
+
+.container-section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff914d;
+    color: white;
+}
+
+#app-background{
+    background-image: url(./img/App-Banco.jpeg);
+    background-size: cover;
+}
+
+#conteudo1-home {
+    width: 25%;
+    font-size: 1.4em;
+    margin: 0 20px;
+}
+
+#conteudo2-home {
+    width: 25%;
+    font-size: 1.4em;
+    margin: 0 20px;    
+}
+
+.adquirir-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;  
+}
+
+#container-center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#img-main {
+    background-image: url(./img/mulher-cartao1.jpg);
+    background-size: cover;
+}
+
+.conteudo-h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.conteudo-h2 div {
+    width: 80%;
+    text-align: center;
+}
+
+#section-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color:  #ff914d;
+}
+
+#container-bottom {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#img-pessoa {
+    width: 70%;
+}
+
+#conteudo-section-botton {
+    height: 30%;
+    width: 50%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    height: 15vh;
+    background-color: #ff914d;
+}
