@@ -14,7 +14,6 @@ header {
     justify-content: center;
     height: 20vh;
     background-color: #ff914d;
-
 }
 
 nav {
@@ -139,6 +138,10 @@ nav {
     text-align: center;
 }
 
+
+/* FOOTER HOME*/
+
+
 footer {
     display: flex;
     justify-content: center;
@@ -146,4 +149,18 @@ footer {
     font-size: 2em;
     height: 15vh;
     background-color: #ff914d;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #ff914d;
+}
+
+.container-list-footer ul {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
 }
