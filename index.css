@@ -1,8 +1,16 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+}
+
+/* ESTILOS GERAIS */
+
+img {
+    border-radius: 10px;
 }
 
 /* HOME */
@@ -14,7 +22,6 @@ header {
     justify-content: center;
     height: 20vh;
     background-color: #ff914d;
-
 }
 
 nav {
@@ -69,11 +76,15 @@ nav {
 }
 
 #conteudo-home {
-    /* background-color: #fff; */
     width: 40%;
     display: flex;
     align-items: center;
-    font-size: 1.4em;
+    text-align: center;
+    font-size: 2em;
+}
+
+#conteudo-home p {
+    font-size: 0.9em;
 }
 
 #container-center {
@@ -86,14 +97,14 @@ nav {
     width: 70%;
 }
 
-.conteudo-h2 {
+.container-h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
 }
 
-.conteudo-h2 div {
+.container-h2 div h2{
     width: 80%;
     text-align: center;
 }
@@ -103,15 +114,13 @@ nav {
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #ff914d;
     color: white;
 }
 
-
-
 #container-bottom {
-    height: 50%;
+    /* height: 50%; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -122,10 +131,38 @@ nav {
 }
 
 #conteudo-section-botton {
+
     height: 30%;
     width: 50%;
+    margin-top: 50px;
     text-align: center;
 }
+
+#conteudo-section-bottom h2{
+    font-size: 1.7em;
+}
+
+#conteudo-section-bottom div {
+    margin-top: 15px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.box-link {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.box-link a {
+    color: #ff914d;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+
+/* FOOTER HOME*/
 
 
 footer {
@@ -135,4 +172,18 @@ footer {
     font-size: 2em;
     height: 15vh;
     background-color: #ff914d;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #ff914d;
+}
+
+.container-list-footer ul {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
 }
