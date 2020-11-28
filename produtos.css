@@ -59,21 +59,33 @@ nav {
     display: flex;
     height: 100vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #ff914d;
     color: white;
 }
 
-#logo-conteudo {
-    width: 40%;
+#app-background{
+    background-image: url(./img/App-Banco.jpeg);
+    background-size: cover;
 }
 
-#conteudo-home {
-    /* background-color: #fff; */
-    width: 40%;
-    display: flex;
-    align-items: center;
+#conteudo1-home {
+    width: 25%;
     font-size: 1.4em;
+    margin: 0 20px;
+}
+
+#conteudo2-home {
+    width: 25%;
+    font-size: 1.4em;
+    margin: 0 20px;    
+}
+
+.adquirir-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;  
 }
 
 #container-center {
@@ -83,13 +95,14 @@ nav {
 }
 
 #img-main {
-    width: 70%;
+    background-image: url(./img/mulher-cartao1.jpg);
+    background-size: cover;
 }
 
 .conteudo-h2 {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 2em;
 }
 
@@ -104,17 +117,16 @@ nav {
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-    background-color: #ff914d;
-    color: white;
+    background-color: white;
+    color:  #ff914d;
 }
-
-
 
 #container-bottom {
     height: 50%;
     width: 50%;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 #img-pessoa {
@@ -126,7 +138,6 @@ nav {
     width: 50%;
     text-align: center;
 }
-
 
 footer {
     display: flex;
