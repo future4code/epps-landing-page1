@@ -327,6 +327,7 @@ footer div{
     }
 
     .conteudo-h2{
+        
         height: 100%;
         flex-direction: column;
         align-items: center;
@@ -338,11 +339,12 @@ footer div{
     }
 
     #container-bottom{
-        width: 90vh;        
+        width: 50vh;
+        height: 100vw;
     }
     
     #conteudo-section-botton{
-        width: 90vw;
+        width: 100%;
     }
 
     /* FOOTER */
