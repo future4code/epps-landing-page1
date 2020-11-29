@@ -246,16 +246,10 @@ footer div{
 
     #conteudo2-home {
         width: 50%;
-        justify-content: ;
+        /* justify-content: ; */
         margin-top: 20px;
         padding: 0 10px;
-    }
-
-    .adquirir-form{
-        
-    }
-
-
+    } 
 
     /* FOOTER */
 
@@ -270,3 +264,4 @@ footer div{
         justify-content: center;
         width: 100%;
     }
+}
