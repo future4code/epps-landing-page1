@@ -40,9 +40,9 @@ nav {
     height: 20vh;
 }
 
-.logo {
+/* .logo {
     height: 100%;
-}
+} */
 
 .logo a {
     display: block;
@@ -320,12 +320,12 @@ footer div{
         align-items: center;
     }
 
-    .logo {
+    /* .logo {
         height: 20vh;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .container-links {
         width: 100%;
