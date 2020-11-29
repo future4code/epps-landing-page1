@@ -3,6 +3,18 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GERAIS */
+
+img {
+    border-radius: 10px;
+}
+
+body {
+    background-color: #ff914d;
 }
 
 /* HOME */
@@ -13,7 +25,6 @@ header {
     display: flex;
     justify-content: center;
     height: 20vh;
-    background-color: #ff914d;
 }
 
 nav {
@@ -25,10 +36,6 @@ nav {
 
 #img-logo {
     height: 20vh;
-}
-
-.logo {
-    height: 100%;
 }
 
 .logo a {
@@ -59,7 +66,6 @@ nav {
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-    background-color: #ff914d;
     color: white;
 }
 
@@ -76,15 +82,48 @@ nav {
 
 #conteudo2-home {
     width: 25%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     font-size: 1.4em;
-    margin: 0 20px;    
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: #ff914d;
 }
 
 .adquirir-form{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;  
+    margin: 20px 0;
+}
+
+.adquirir-form input[type=text]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.123);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.adquirir-form input:focus{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);    
+}
+
+.adquirir-form button[type=button]{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.adquirir-form button:active{
+    border: 2px solid rgba(0, 0, 0, 1);
 }
 
 #container-center {
@@ -154,7 +193,7 @@ footer {
 footer div{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     background-color: #ff914d;
 }
 
@@ -163,4 +202,66 @@ footer div{
     width: 50%;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+    
+    /* HEADER */
+
+    header {
+        height: 30vh;
+        margin-bottom: 50px;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MAIN */
+
+    .container-section {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    } 
+    
+    #app-background{
+       background-size: auto; 
+    }
+    
+    #conteudo1-home {
+        width: 50%;
+    }
+
+    #conteudo2-home {
+        width: 50%;
+        /* justify-content: ; */
+        margin-top: 20px;
+        padding: 0 10px;
+    } 
+
+    /* FOOTER */
+
+    .container-list-footer ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }
