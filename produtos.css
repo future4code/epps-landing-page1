@@ -193,7 +193,7 @@ footer {
 footer div{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     background-color: #ff914d;
 }
 
