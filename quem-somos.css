@@ -5,6 +5,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ESTILOS GERAIS */
@@ -66,48 +67,57 @@ nav {
     background-color: #ff914d;
 }
 
-#main-sobre h1, h2 {
+/* #main-sobre h1, h2 {
     text-align: center;
     color: white;
-    font-size: 4em;
+    font-size: 3em;
     margin: 0 0 1em 0;
+} */
+
+.title-sobre  {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-.section-sobre {
+#section-sobre-1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    /* background-color: #ff914d; */
+    height: 80vh;
 }
 
 .section-sobre div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40%;
     height: 70%;
-    /* background-color: #fff; */
 }
 
 #box-1-section-sobre {
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 #box-1-section-sobre h2 {
+    margin-top: 20px;
+    color: #ff914d;
+    font-size: 4em;
+}
+
+#section-sobre-2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    /* color: #ff914d; */
-    color: white;
-    font-size: 5em;
+    height: 100vh;
 }
 
 #box-2-section-sobre {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    text-align: center;
+    align-items: center;
+    /* text-align: center; */
     color: white;
     font-size: 1.3em
 }
@@ -115,8 +125,7 @@ nav {
 #box-3-section-sobre-2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
+    justify-content: center;
     height: 80%;
     color: white;
     font-size: 1.3em
@@ -132,11 +141,13 @@ nav {
     background-repeat: no-repeat;
 }
 
-#box-2-section-sobre-2 {
-    background-image: url(./img/cartão.png);
-    background-image: cover;
-    background-repeat: no-repeat;
-}
+#box-4-section-sobre-2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
 
 
 
