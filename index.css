@@ -14,6 +14,10 @@ img {
     border-radius: 10px;
 }
 
+body {
+    background-color: #ff914d;
+}
+
 /* HOME */
 
 /* CABEÇALHO HOME */
@@ -22,7 +26,6 @@ header {
     display: flex;
     justify-content: center;
     height: 20vh;
-    background-color: #ff914d;
 }
 
 nav {
@@ -34,10 +37,6 @@ nav {
 
 #img-logo {
     height: 20vh;
-}
-
-.logo {
-    height: 100%;
 }
 
 .logo a {
@@ -63,12 +62,16 @@ nav {
 
 /* CONTEÚDO HOME */
 
+#section-above-all {
+    justify-content: space-around;
+    height: 90vh;
+}
+
 .container-section {
     display: flex;
-    height: 100vh;
+    height: 110vh;
     align-items: center;
-    justify-content: space-around;
-    background-color: #ff914d;
+    justify-content: center;
     color: white;
 }
 
@@ -81,7 +84,7 @@ nav {
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 #conteudo-home p {
@@ -90,12 +93,10 @@ nav {
 
 #container-center {
     width: 50%;
-    display: flex;
-    justify-content: center;
 }
 
-#img-main {
-    width: 70%;
+.img-mulher {
+    width: 100%;
 }
 
 .container-h2 {
@@ -103,36 +104,34 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    width: 40%;
 }
 
 .container-h2 div h2{
-    width: 80%;
     text-align: center;
 }
 
 #section-bottom {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 140vh;
     align-items: center;
-    /* justify-content: space-between; */
-    background-color: #ff914d;
+    justify-content: center;
     color: white;
 }
 
 #container-bottom {
-    /* height: 50%; */
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-#img-pessoa {
-    width: 70%;
+#box-1-section-bottom {
+    display: flex;
+    justify-content: center;
 }
 
-#conteudo-section-botton {
-
+#conteudo-section-bottom {
     height: 30%;
     width: 50%;
     margin-top: 50px;
@@ -156,6 +155,11 @@ nav {
     border-radius: 10px;
 }
 
+.box-link:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
 .box-link a {
     color: #ff914d;
     font-weight: 600;
@@ -172,14 +176,12 @@ footer {
     text-align: center;
     font-size: 2em;
     height: 15vh;
-    background-color: #ff914d;
 }
 
 footer div{
     display: flex;
     justify-content: center;
-    width: 50%;
-    background-color: #ff914d;
+    width: 100%;
 }
 
 .container-list-footer ul {
@@ -187,4 +189,225 @@ footer div{
     width: 50%;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+    
+    /* HEADER */
+
+    header {
+        height: 30vh;
+        margin-bottom: 50px;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MAIN */
+
+    #section-above-all {
+        height: 100%;
+    }
+    
+    .container-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%; 
+        align-items: center;
+        color: white;
+        padding: 0 0 70px;
+    }
+
+    #container-center {
+        width: 90%;
+    }
+
+    #logo-conteudo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #img-logo-main {
+        width: 400px;
+    }
+
+    #conteudo-home {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #container-center {
+        margin-bottom: 30px;
+    }
+
+    .img-mulher {
+        width: 100%;
+    }
+
+    .container-h2 {
+        width: 70%;
+    }
+
+    .container-h2 div h2{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #section-bottom {
+        padding-bottom: 50px;
+        height: 100%;
+    }
+
+    #container-bottom {
+        width: 90%;
+    }
+
+    #conteudo-section-bottom {
+        width: 95%;
+    }
+
+    /* FOOTER */
+
+    .container-list-footer ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+    
+    /* HEADER */
+
+    header {
+        height: 30vh;
+        margin-bottom: 50px;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-links {
+        width: 100%;
+    }
+
+    .container-links ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* MAIN */
+
+    #section-above-all {
+        height: 100%;
+    }
+    
+    .container-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 0 0 50px;
+    }
+
+    #logo-conteudo {
+        display: flex;
+        justify-content: center;
+    }
+
+    #img-logo-main {
+        width: 250px;
+    }
+
+    #conteudo-home {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    #container-center {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .img-mulher {
+        width: 100%;
+    }
+
+    .container-h2 {
+        width: 90%;
+    }
+
+    .container-h2 div h2{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #section-bottom {
+        height: 100%;
+        padding: 0 0 50px;
+    }
+
+    #container-bottom {
+        width: 90%;
+    }
+
+    #conteudo-section-bottom {
+        width: 95%;
+    }
+
+    #conteudo-section-bottom h2 {
+        font-size: 1.5em;
+    }
+
+    /* FOOTER */
+
+    footer div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-list-footer ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
 }
