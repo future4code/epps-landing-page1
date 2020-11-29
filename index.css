@@ -205,6 +205,13 @@ footer div{
         align-items: center;
     }
 
+    .logo {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* MAIN */
 
     #section-above-all {
