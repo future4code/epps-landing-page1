@@ -40,10 +40,6 @@ nav {
     height: 20vh;
 }
 
-/* .logo {
-    height: 100%;
-} */
-
 .logo a {
     display: block;
     width: 100%;
@@ -70,13 +66,6 @@ nav {
 #main-sobre {
     background-color: #ff914d;
 }
-
-/* #main-sobre h1, h2 {
-    text-align: center;
-    color: white;
-    font-size: 3em;
-    margin: 0 0 1em 0;
-} */
 
 .title-sobre  {
     height: 15vh;
@@ -115,7 +104,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     color: white;
     font-size: 1.3em
 }
@@ -145,7 +133,6 @@ nav {
     background-image: url(./img/img-section1-sobre.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* opacity: 0.7; */
 }
 
 #box-4-section-sobre-2 {
@@ -319,13 +306,6 @@ footer div{
         justify-content: center;
         align-items: center;
     }
-
-    /* .logo {
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
 
     .container-links {
         width: 100%;
