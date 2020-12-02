@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GERAIS */
+
+img {
+    border-radius: 10px;
+}
+
+body {
+    background-color: #ff914d;
+}
+
+/* HOME */
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-logo {
+    height: 20vh;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+}
+
+.container-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-links ul {
+    display: flex;
+}
+
+.container-links a {
+    font-size: 2em;
+    color: white;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+/* CONTEÚDO HOME */
+
+.container-section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#app-background{
+    background-image: url(./img/App-Banco.jpeg);
+    background-size: cover;
+}
+
+#conteudo1-home {
+    width: 25%;
+    font-size: 1.4em;
+    margin: 0 20px;
+    text-align: center;
+}
+
+#conteudo2-home {
+    width: 25%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4em;
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+    color: #ff914d;
+}
+
+.adquirir-form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.adquirir-form input[type=text]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.123);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.adquirir-form input:focus{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);    
+}
+
+.adquirir-form button[type=button]{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.adquirir-form button:active{
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+#img-main {
+    background-image: url(./img/mulher-cartao1.jpg);
+    background-size: cover;
+}
+
+.conteudo-h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.conteudo-h2 div {
+    width: 80%;
+    text-align: center;
+}
+
+#section-bottom {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color:  #ff914d;
+}
+
+#container-bottom {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#img-pessoa {
+    width: 70%;
+}
+
+#conteudo-section-botton {
+    height: 30%;
+    width: 50%;
+    text-align: center;
+}
+
+
+/* FOOTER HOME*/
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    height: 15vh;
+    background-color: #ff914d;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ff914d;
+}
+
+.container-list-footer ul {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Responsividade */
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+    
+    /* HEADER */
+
+    header {
+        height: 30vh;
+        margin-bottom: 50px;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MAIN */
+
+    .container-section {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    } 
+    
+    #app-background{
+       background-size: auto;
+    }
+    
+    #conteudo1-home {
+        width: 50%;
+        margin: 50px;
+    }
+
+    #conteudo2-home {
+        width: 50%;
+        margin: 50px;
+        padding: 0 10px;
+    } 
+        
+    #img-main {
+        background-size: 150vh;
+    }
+
+    #section-bottom{
+        justify-content: space-around;
+    }
+
+    #container-bottom {
+        /* width: 100%; */
+    }
+
+    #conteudo-section-botton{
+        width: 90%;
+    }
+    
+    /* FOOTER */
+
+    .container-list-footer ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+     
+    /* HEADER */
+
+     header {
+        height: 30vh;
+        margin-bottom: 50px;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MAIN */
+
+    .container-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    } 
+
+    #app-background{
+        background-image: url(./img/super-app-banco.png);
+        /* background-size: 100%;
+        background-repeat: no-repeat; */
+    }
+
+    #conteudo1-home {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    #conteudo2-home {
+        width: 100%;
+        height: 40%;
+    }
+
+    #img-main {
+        background-image: url(./img/cartão.png);
+        /* background-size: cover;  */
+    }
+
+    .conteudo-h2{        
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4em;
+    }
+   
+    #section-bottom{
+        height: 100vh;
+        background-color: #ff914d;
+        color:  white;
+        justify-content: space-around;
+    }
+
+    #container-bottom{
+        width: 130vw;
+    }
+    
+    #conteudo-section-botton{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    /* FOOTER */
+
+    .container-list-footer ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
